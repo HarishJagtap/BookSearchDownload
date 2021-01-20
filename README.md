@@ -1,4 +1,4 @@
-## BookSearchDownload
+## BookSearchDownload - Android App
 
 An Android app created by me, available on PlayStore. <br>
 https://play.google.com/store/apps/details?id=com.threethree.booksearchdownload <br>
