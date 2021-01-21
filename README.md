@@ -16,7 +16,7 @@ https://play.google.com/store/apps/details?id=com.threethree.booksearchdownload 
 `Tools: Java, Kotlin, Android Studio, PDFium, DJVUlibre, Admob, Volley, Jsoup,
 AWS S3, Gson` <br>
 
-## Issues fixed
+## Challenges faced
 
 * Admob crashing due to many threads requesting it at same time
   * This happens because admob is initially requested with default configuration
