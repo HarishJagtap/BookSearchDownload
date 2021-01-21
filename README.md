@@ -11,7 +11,7 @@ https://play.google.com/store/apps/details?id=com.threethree.booksearchdownload 
 * Renders and displays Pdf files using native "Chromium's PDFium" library. <br>
 * Displays Epub files by Unzipping and loading spine data. <br>
 * Can Backup and Restore downloads list and files using Gson and SharedPreferences. <br>
-* Has Google Admobs and Analytics. <br>
+* Has Google Admob and Analytics. Have disabled Admob for now.<br>
 
 `Tools: Java, Kotlin, Android Studio, PDFium, DJVUlibre, Admob, Volley, Jsoup,
 AWS S3, Gson` <br>
@@ -23,7 +23,7 @@ AWS S3, Gson` <br>
   * When new configuration is downloaded from S3 bucket, admob is requested again
   * Also admob is requested again with latest configuration whenever network state changes
   * All of these requests run on seperate threads sometimes at overlapping times competing for same resource
-  * Fixed by allowing only latest thread to request admob resource and block all other threads
+  * Fixed by making changes to Admob so that it serves requests of only the latest thread, and ignores requests of all other threads without using locks
   
 * Deleting a download requires changing order of all later downloads in sharedprefs
   * This is expensive as it can cause UI delay
